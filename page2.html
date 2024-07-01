@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+</head>
+<style>
+    .header 
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: white;
+    }
+    .header img 
+    {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    .header .site
+    {
+        flex-grow: 1;
+        text-align: left;
+        background-color: white;
+        padding: 10px;
+        font-size: 30px;
+    }
+    form 
+    {
+        background: #f9f9f9;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input[type=text], input[type=email], select {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type=checkbox] {
+        margin-right: 10px;
+    }
+    
+    .footer {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 14px;
+        color: #777;
+    }
+</style>
+<body>
+    <div class="header">
+        <img src="i2.jpg">
+        <div class="site"><a href="page2.html">WILDLIFE</a></div>
+        <div><a href="page1.html" >CONTACT</a></div>
+
+    </div>
+
+<div>
+    <p>Animals are vital components of our ecosystems, contributing to biodiversity, ecological balance, and human well-being.</p>
+    <h2>Form</h2>
+    <form action="/submit-your-form-handler" method="post">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="genre">Favourite</label>
+            <select id="genre" name="genre" required>
+                <option value="Mammals">Mammals</option>
+                <option value="Birds">Birds</option>
+                <option value="Amphibians">Amphibaians</option>
+                <option value="Insect">Insects</option>
+                <option value="Fish">Fish</option>
+
+            </select>
+        </div>
+        <div>
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <label for="newsletter">Subscribe to our newsletter via email</label>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+    
+    <div class="footer">
+        &copy; Wildlife. All rights reserved.
+    </div>
+</div>
+
+</body>
+</html>
